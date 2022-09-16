@@ -1,0 +1,14 @@
+java
+classSolution{	
+	publicintmaxSubArray(int[] nums) {
+	intcurrentMax= nums[0];
+	intmax= nums[0];
+	for(inti=1;i<nums.length;i++) {
+	currentMax= Math.max(nums[i],currentMax+nums[i]);
+	if(currentMax> max) {
+	max= currentMax;
+	} 
+	}
+	returnmax;
+	} 
+	}
